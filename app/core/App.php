@@ -6,6 +6,10 @@
     URL pattern - URL_ROOT/controller/method/params
 */
 
+echo _("Hello");
+echo _("Good morning");
+
+
 class App{
 
     protected $currentController = 'Home'; //this means that whenever you use this framework, you must first define the Home Controller

@@ -25,5 +25,12 @@
 
         </email>
         */
+        $locale = isset($_GET['lang']) ? $_GET['lang'] : 'fr_CA';
+        $domain = 'mywebapp_'.$locale;
+        putenv("LANGUAGE=$locale");
+        setlocale(LC_ALL, $locale);
+        bindtextdomain($domain, "C:\\xampp\\htdocs\\MVC\\app\\locales");
+        textdomain($domain);
+        bind_textdomain_codeset($domain, 'UTF-8');
 
 ?>
