@@ -6,8 +6,9 @@
     URL pattern - URL_ROOT/controller/method/params
 */
 
-echo _("Hello");
-echo _("Good morning");
+// echo _("Hello");
+// echo _("Good morning");
+// echo _("Real Estate News");
 
 
 class App{

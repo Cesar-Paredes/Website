@@ -68,13 +68,13 @@
    <!--Section heading-->
    
     <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. </p>
+    <p class="text-center w-responsive mx-auto mb-5"> <?php echo _("Do you have any questions? Please do not hesitate to contact us directly. ") ?></p>
 
     <div class="row">
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id="createMessage" name="contact-form" action="" method="post" enctype="multipart/form-data">
 
                 <!--Grid row-->
                 <div class="row">
@@ -83,7 +83,7 @@
                     <div class="col-md-6">
                         <div class="md-form mb-0">
                             <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
+                            <label for="name" class=""><?php echo _("Your name"); ?> </label>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -92,7 +92,7 @@
                     <div class="col-md-6">
                         <div class="md-form mb-0">
                             <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
+                            <label for="email" class=""><?php echo _("Your email"); ?></label>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -105,7 +105,7 @@
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
+                            <label for="subject" class=""><?php echo _("Subject"); ?></label>
                         </div>
                     </div>
                 </div>
@@ -118,19 +118,21 @@
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="content" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="content"><?php echo _("Your Message"); ?></label>
                         </div>
 
                     </div>
                 </div>
                 <!--Grid row-->
 
+                <div class="text-center text-md-left">
+                <button type="submit"  name="sendMessage" class="btn btn-primary btn-lg">Send</button>
+                </div>
+
             </form>
 
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
+            
             <div class="status"></div>
         </div>
         <!--Grid column-->

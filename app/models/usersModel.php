@@ -109,4 +109,55 @@ class usersModel
             return false;
         }
     }
+
+
+    public function createMessage($data)
+    {
+
+        echo "create user "."</br>";
+
+        //it will pass the query insert in the database
+        $this->db->query("INSERT into messages (name,  email, subject, content) values (:name, :email, :subject, :content,)");
+
+        //pass the values to the database
+        //db is a Model object, bind is a fucntion insde Model class
+        $this->db->bind(":name", $data['name']);
+        $this->db->bind(":email", $data['email']);
+        $this->db->bind(":subject", $data['subject']);
+        $this->db->bind(":content", $data['content']);
+        
+
+        // echo "</br>";
+        // echo "done binding";
+
+        
+
+
+
+        //execute the above statement
+        //if executed then creates and id and create is true
+        if ($this->db->execute()) {
+
+            echo "executed";
+
+            $id = $this->db->dbh->lastInsertId();
+
+            $data = [
+                'id' => $id,
+                'created' => true
+            ];
+            return $data;
+        } 
+        
+        else {
+            echo "false";
+            return false;
+        }
+
+        echo "nothing";
+    }
+
+
+
+
 }

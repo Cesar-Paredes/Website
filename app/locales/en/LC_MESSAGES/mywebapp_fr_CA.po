@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-06-15 15:36-0400\n"
-"PO-Revision-Date: 2022-06-15 19:12-0400\n"
+"POT-Creation-Date: 2022-06-16 15:29-0400\n"
+"PO-Revision-Date: 2022-06-16 15:33-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -14,10 +14,82 @@ msgstr ""
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: core/App.php:9
-msgid "Hello"
-msgstr "Bonjour"
+#: views/Contact/contact_view.php:71
+msgid "Do you have any questions? Please do not hesitate to contact us directly. "
+msgstr "Avez-vous des questions? N'hésitez pas à nous contacter directement "
 
-#: core/App.php:10
-msgid "Good morning"
-msgstr "Bon journee"
+#: views/Contact/contact_view.php:86
+msgid "Your name"
+msgstr "Votre nom"
+
+#: views/Contact/contact_view.php:95
+msgid "Your email"
+msgstr "Votre e-mail"
+
+#: views/Contact/contact_view.php:108
+msgid "Subject"
+msgstr "Sujet"
+
+#: views/Contact/contact_view.php:122
+#, fuzzy
+#| msgid "Your name"
+msgid "Your Message"
+msgstr "Votre nom"
+
+#: views/Home/home_view.php:150
+msgid "Real Estate News"
+msgstr "Actualités immobilières"
+
+#: views/Login/register.php:42
+msgid "Sign up"
+msgstr "S'inscrire"
+
+#: views/Login/register.php:50
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: views/Login/register.php:58
+msgid "First Name"
+msgstr "Prénom"
+
+#: views/Login/register.php:66
+msgid "Last Name"
+msgstr "Nom de famille"
+
+#: views/Login/register.php:74
+msgid "Email"
+msgstr "E-mail"
+
+#: views/Login/register.php:82
+msgid "Phone"
+msgstr "Téléphone"
+
+#: views/Login/register.php:91
+msgid "Password"
+msgstr "Mot de passe"
+
+#: views/Login/register.php:99
+msgid "Repeat password"
+msgstr "Répéter le mot de passe"
+
+#: views/Login/register.php:105
+msgid "Upload"
+msgstr "Télécharger"
+
+#: views/Login/register.php:110
+msgid "Choose File"
+msgstr "Choisir le fichier"
+
+#: views/Login/register.php:117
+msgid "I agree all statements in"
+msgstr "Je suis d'accord avec toutes les déclarations dans"
+
+#: views/Login/register.php:123
+msgid "Register"
+msgstr "S'inscrire"
+
+#~ msgid "Hello"
+#~ msgstr "Bonjour"
+
+#~ msgid "Good morning"
+#~ msgstr "Bon journee"

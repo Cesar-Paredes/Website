@@ -47,6 +47,7 @@ class Register extends Controller{
     ]
   ]);
   
+
   
     // Check if file was uploaded without errors
     echo "post";
@@ -138,12 +139,48 @@ class Register extends Controller{
 
                 header("Location: ".URLROOT."/home");
             }
-        } else {
+        } 
+        
+        else {
             $this->view('Login/register');
         }
 
 
     }
+
+
+    public function createMessage()
+    {
+
+        if (isset($_POST['sendMessage'])) {
+              //data from the form will be pass to this data array
+
+              $data = [
+                'name' => $_POST['name'],
+                'firstname' => $_POST['firstname'],
+                'email' => $_POST['email'],
+                'subject' => $_POST['subject'],
+                'content' => $_POST['content'],
+                
+            ];
+            
+            //we pass the array to createUser method in the usersModel class
+            $confirmationData = $this->usersModel->createMessage($data);
+            if ($confirmationData['created']) {
+                echo "created confirm";
+                echo 'Please wait registering you on the application';
+
+                // $this->sendConfirmationEmail();
+
+                header("Location: ".URLROOT."/home");
+            }
+
+
+        }
+
+    }
+
+
 
     private function sendConfirmationEmail(){
 

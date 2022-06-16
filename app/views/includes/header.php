@@ -48,20 +48,21 @@
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
         <li><a href="/mvc/Home">Home</a></li>
         <li><a href="/mvc/Resources">Resources</a></li>
         <li><a href="/mvc/About">About</a></li>
         <li><a href="/mvc/Contact">Contact us</a></li>
-      </ul>
+        </ul>
       
-    </div>
+    
 
-    <!-- also included in the nav bar -->
-    <!-- this is the login and sign up part here we combine php with with html and its not using alternative systanx which is recommended -->
-    <div class="collapse navbar-collapse justify-content-end"       id="navbarNav"> 
+          <!-- also included in the nav bar -->
+          <!-- this is the login and sign up part here we combine php with with html and its not using alternative systanx which is recommended -->
+    
           <ul class="nav navbar-nav">
 
           <!-- using alternative syntax to mix html and php-->
@@ -88,11 +89,43 @@
             <?php endif; ?>
 
          </ul>
-     </div>
+     
 
 
 
-  </div>
+      </div>
+
+  <div>
+
+
+  <!-- localization selector -->
+ <label for="languages"  >Language:</label>
+ 
+
+	<select name="languages" id="languages" onchange="switchlanguage(this)">
+  
+
+	  <option value="en" <?php echo $_GET['lang'] == 'en' ? 'selected="selected"' : ''; ?> >en</option>
+	  <option value="fr_CA" <?php echo $_GET['lang'] == 'fr_CA' ? 'selected="selected"' : ''; ?> >fr_CA</option>
+    
+	</select>
+	</br>
+<script >
+	
+	//This is set to be called in the HTML drop down: onchange="switchlanguage(this)"
+	function switchlanguage(dropdown) {
+
+		// location.pathname evaluates to: /localization/languageselection.php
+		 document.location = location.pathname+'?lang='+dropdown.options[dropdown.selectedIndex].value;
+
+	}
+
+</script>
+
+</div>
+ 
+
+
 </nav>
 
 
