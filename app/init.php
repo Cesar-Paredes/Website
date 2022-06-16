@@ -1,4 +1,8 @@
 <?php
+
+    require '../vendor/autoload.php';
+
+
     //We will add our libraries here
     // require_once 'core/app.php';
     // require_once 'core/Controller.php';

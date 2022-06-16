@@ -37,7 +37,14 @@ class usersModel
     
     public function createUser($data)
     {
-        $this->db->query("INSERT into users (username, firstname, lastname,  email, password, phone) values (:username, :firstname, :lastname, :email, :password, :phone)");
+
+        echo "create user "."</br>";
+
+        //it will pass the query insert in the database
+        $this->db->query("INSERT into users (username, firstname, lastname,  email, password, phone, active) values (:username, :firstname, :lastname, :email, :password, :phone, :active)");
+
+        //pass the values to the database
+        //db is a Model object, bind is a fucntion insde Model class
         $this->db->bind(":username", $data['username']);
         $this->db->bind(":firstname", $data['firstname']);
         $this->db->bind(":lastname", $data['lastname']);
@@ -45,19 +52,35 @@ class usersModel
         $this->db->bind(":password", $data['password']);
         $this->db->bind(":phone", isset($data['phone']) ? $data['phone'] : "");
         $this->db->bind(":active", $data['active']);
+
+        echo "</br>";
+        echo "done binding";
+
         
 
 
+
+        //execute the above statement
+        //if executed then creates and id and create is true
         if ($this->db->execute()) {
+
+            echo "executed";
+
             $id = $this->db->dbh->lastInsertId();
+
             $data = [
                 'id' => $id,
                 'created' => true
             ];
             return $data;
-        } else {
+        } 
+        
+        else {
+            echo "false";
             return false;
         }
+
+        echo "nothing";
     }
     public function updateUser($data)
     {

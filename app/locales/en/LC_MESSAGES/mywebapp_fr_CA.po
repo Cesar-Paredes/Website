@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-06-13 16:18-0400\n"
-"PO-Revision-Date: 2022-06-13 16:19-0400\n"
+"POT-Creation-Date: 2022-06-15 15:36-0400\n"
+"PO-Revision-Date: 2022-06-15 19:12-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -14,10 +14,10 @@ msgstr ""
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: languageselection.php:47 webpage.php:26
+#: core/App.php:9
 msgid "Hello"
 msgstr "Bonjour"
 
-
+#: core/App.php:10
 msgid "Good morning"
-msgstr "Bon journe"
+msgstr "Bon journee"

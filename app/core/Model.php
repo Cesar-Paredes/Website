@@ -39,6 +39,8 @@ class Model{
 
     // 2. bind values 
     public function bind($param, $value, $type = null){
+
+        echo " bind: " . $param . " value: " .$value . " - " . " type: " . $type;
         if(is_null($type)){
             switch(true){
                 case is_int($value):
@@ -46,15 +48,19 @@ class Model{
                     break;
                 case is_bool($value):
                     $type = PDO::PARAM_BOOL;
+                    echo " bind INSIDE: " . $param . " value: " .$value . " - " . " type: " . $type;
                     break;
                 case is_null($value):
                     $type = PDO::PARAM_NULL;
                     break;
                 default:
                     $type = PDO::PARAM_STR;
+      
             }
+            
         }
         $this->stmt->bindValue($param, $value, $type);
+        echo "bind done";
     }
 
     // 3. Execute prepared statement with values binded
