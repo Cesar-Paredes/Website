@@ -40,9 +40,8 @@ class Register extends Controller{
     'version' => 'latest',
     'region'  => 'us-east-1',
     'credentials' => [
-    'key'    => 'AKIAUTZKO3SNYPVE6ILQ',
-    'secret' => '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
-    '
+    'key'    => '',
+    'secret' => ''
     ]
   ]);
   

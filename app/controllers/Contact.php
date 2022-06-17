@@ -24,7 +24,6 @@ class Contact extends Controller{
 
               $data = [
                 'name' => $_POST['name'],
-                'firstname' => $_POST['firstname'],
                 'email' => $_POST['email'],
                 'subject' => $_POST['subject'],
                 'content' => $_POST['content'],

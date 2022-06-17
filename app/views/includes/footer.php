@@ -40,7 +40,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2022 <?php echo _("Copyright:"); ?>
-    <a class="text-white" href="https://mdbootstrap.com/">Cesar Paredes [0723035]</a>
+    <a class="text-white">Cesar Paredes [0723035]</a>
   </div>
   <!-- Copyright -->
 </footer>
