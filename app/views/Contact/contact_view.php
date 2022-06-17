@@ -66,7 +66,7 @@
 <!--Main layout-->
 <main class="mb-4">
    <!--Section heading-->
-   
+
     <!--Section description-->
     <p class="text-center w-responsive mx-auto mb-5"> <?php echo _("Do you have any questions? Please do not hesitate to contact us directly. ") ?></p>
 
@@ -74,7 +74,9 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="createMessage" name="contact-form" action="" method="post" enctype="multipart/form-data">
+
+
+            <form id="createMessage" action="" method="post" enctype="multipart/form-data">
 
                 <!--Grid row-->
                 <div class="row">
@@ -118,7 +120,7 @@
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="content" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="content" name="content" rows="2" class="form-control md-textarea"></textarea>
                             <label for="content"><?php echo _("Your Message"); ?></label>
                         </div>
 
@@ -127,13 +129,13 @@
                 <!--Grid row-->
 
                 <div class="text-center text-md-left">
-                <button type="submit"  name="sendMessage" class="btn btn-primary btn-lg">Send</button>
+                <button type="submit"  name="sendMessage" class="btn btn-primary btn-lg"><?php echo _("Send"); ?></button>
                 </div>
 
             </form>
 
             
-            <div class="status"></div>
+            
         </div>
         <!--Grid column-->
 

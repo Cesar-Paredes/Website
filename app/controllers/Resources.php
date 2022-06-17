@@ -13,7 +13,8 @@ class Resources extends Controller{
 
       if($membershipProvider->loggedIn()){
           $this->view('Resources/resources_view');
-      }else{
+      }
+      else{
       session_write_close();
       header("Location: /mvc/login?redirect=Resources");
       }

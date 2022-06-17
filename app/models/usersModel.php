@@ -114,10 +114,10 @@ class usersModel
     public function createMessage($data)
     {
 
-        echo "create user "."</br>";
+        echo "create message "."</br>";
 
         //it will pass the query insert in the database
-        $this->db->query("INSERT into messages (name,  email, subject, content) values (:name, :email, :subject, :content,)");
+        $this->db->query("INSERT into messages (name,  email, subject, content) values (:name, :email, :subject, :content)");
 
         //pass the values to the database
         //db is a Model object, bind is a fucntion insde Model class
@@ -127,8 +127,8 @@ class usersModel
         $this->db->bind(":content", $data['content']);
         
 
-        // echo "</br>";
-        // echo "done binding";
+        echo "</br>";
+        echo "done binding";
 
         
 

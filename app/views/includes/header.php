@@ -25,9 +25,10 @@
   <title><?php echo SITENAME ?></title>
 
 <style>
-
-
-   
+  
+  .navbar-custom {
+    background-color: lightgreen;
+}
 
 </style>
 
@@ -37,25 +38,35 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  
 
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+
+</nav> -->
+
+
+
+  <nav class="navbar navbar-expand-lg navbar navbar-inverse">
+
+    <!-- <nav class="navbar navbar-inverse"> -->
+      <div class="container-fluid">
+     <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      </button> -->
+      
+      <a class="navbar-brand" href="/mvc/Home">REAL ESTATE PROJECT</a>
       </div>
 
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-        <li><a href="/mvc/Home">Home</a></li>
-        <li><a href="/mvc/Resources">Resources</a></li>
-        <li><a href="/mvc/About">About</a></li>
-        <li><a href="/mvc/Contact">Contact us</a></li>
+        <li><a href="/mvc/Home"><?php echo _("Home"); ?></a></li>
+        <li><a href="/mvc/Resources"><?php echo _("Resources"); ?></a></li>
+        <li><a href="/mvc/About"><?php echo _("About"); ?></a></li>
+        <li><a href="/mvc/Contact"><?php echo _("Contact us"); ?></a></li>
         </ul>
       
     
@@ -73,17 +84,17 @@
             <?php if($membershipProvider->loggedIn()):?>
                <!-- show the logout -->
               <li>
-                <a href="/mvc/login/logout">Logout</a>
+                <a href="/mvc/login/logout"><?php echo _("Logout"); ?></a>
               </li>
 
               <?php else: ?>
                 <!-- show the login and register -->
                 <li>
-                  <a href="/mvc/Login/login">Login</a>
+                  <a href="/mvc/Login/login"><?php echo _("Login"); ?></a>
                 </li>
 
                 <li>
-                  <a href="/mvc/Register/createuser">Sign up</a>
+                  <a href="/mvc/Register/createuser"><?php echo _("Sign up"); ?></a>
                 </li>
 
             <?php endif; ?>
@@ -95,44 +106,47 @@
 
       </div>
 
-  <div>
-
-
-  <!-- localization selector -->
- <label for="languages"  >Language:</label>
+    <div>
+    <!-- localization selector -->
+    <label for="languages" style="color:white" >Language:</label>
  
 
-	<select name="languages" id="languages" onchange="switchlanguage(this)">
+	  <select name="languages" id="languages" onchange="switchlanguage(this)">
   
-  <option value="en"
-  <?php if(!empty($_GET['lang'])){
-    echo $_GET['lang'] == 'en' ? 'selected="selected"' : ''; 
-  }
-  ?>
-  >en</option>
+    <option value="en"
+    <?php if(!empty($_GET['lang'])){
+     echo $_GET['lang'] == 'en' ? 'selected="selected"' : ''; 
+    }
+    ?>
+    >En</option>
 
+    <option value="fr_CA"
+    <?php if(!empty($_GET['lang'])){
+      echo $_GET['lang'] == 'fr_CA' ? 'selected="selected"' : ''; 
+   }
+   ?>
+    >Fr</option>
+
+  
+	  </select>
+	  </br>
+    <script >
 	
-	  <option value="fr_CA" <?php echo $_GET['lang'] == 'fr_CA' ? 'selected="selected"' : ''; ?> >fr_CA</option>
-    
-	</select>
-	</br>
-<script >
-	
-	//This is set to be called in the HTML drop down: onchange="switchlanguage(this)"
-	function switchlanguage(dropdown) {
+	  //This is set to be called in the HTML drop down: onchange="switchlanguage(this)"
+  	function switchlanguage(dropdown) {
 
 		// location.pathname evaluates to: /localization/languageselection.php
 		 document.location = location.pathname+'?lang='+dropdown.options[dropdown.selectedIndex].value;
 
-	}
+	  }
 
-</script>
+    </script>
 
-</div>
+    </div>
  
 
 
-</nav>
+  </nav>
 
 
 </body>
@@ -140,49 +154,7 @@
 </html>
 
 
-      <!-- //using not altervative syntax        -->
-<!--       
-
-      // //if the user is logedin
-      //       if($membershipProvider->loggedIn()){
-      //         // show the logout
-
-      //           echo '<li class="nav-item"><a class="nav-link" href="/mvc/login/logout"><i class="fa fa-sign-out"></i>Logout</a></li>';
-      //       }
-      //       else{
-      //         //show the login and register
-      //           echo '<li class="nav-item"><a class="nav-link" href="/mvc/Login/login"><i class="fa fa-sign-in"></i>Login</a></li>';
-      //           //this is the sign up link and its calling the function in the Register controller, its not callig the createuser.php
-      //           echo '<li class="nav-item"><a class="nav-link" href="/mvc/Register/createuser"><i class="fa-solid fa-user-plus"></i>Sign-up</a></li>';
-      //       }
-           ?>  -->
   
-
-
-
-
-
-
-    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/mvc/Home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/mvc/Users">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/mvc/About">Contact us</a>
-        </li>
-
-      </ul>
-
-       php code 
-     
-           </ul>
-       </div>
-    </div>
-  </nav> -->
 
 
 

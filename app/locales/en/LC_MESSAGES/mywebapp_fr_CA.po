@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-06-16 20:05-0400\n"
-"PO-Revision-Date: 2022-06-16 20:06-0400\n"
+"POT-Creation-Date: 2022-06-17 01:19-0400\n"
+"PO-Revision-Date: 2022-06-17 01:19-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -22,7 +22,7 @@ msgstr "Nous offrons des ressources gratuites pour l'investisseur immobilier"
 msgid "Register for free to access our resources"
 msgstr "Inscrivez-vous gratuitement pour accéder à nos ressources"
 
-#: views/About/about_view.php:71
+#: views/About/about_view.php:71 views/Resources/resources_view.php:82
 msgid ""
 "We are a non profit organization helping real estate investors with "
 "countless resources to help them thrive in the real estate market. From good "
@@ -52,33 +52,37 @@ msgid ""
 "Do you have any questions? Please do not hesitate to contact us directly. "
 msgstr "Avez-vous des questions? N'hésitez pas à nous contacter directement "
 
-#: views/Contact/contact_view.php:86
+#: views/Contact/contact_view.php:88
 msgid "Your name"
 msgstr "Votre nom"
 
-#: views/Contact/contact_view.php:95
+#: views/Contact/contact_view.php:97
 msgid "Your email"
 msgstr "Votre e-mail"
 
-#: views/Contact/contact_view.php:108
+#: views/Contact/contact_view.php:110
 msgid "Subject"
 msgstr "Sujet"
 
-#: views/Contact/contact_view.php:122
+#: views/Contact/contact_view.php:124
 #, fuzzy
 #| msgid "Your name"
 msgid "Your Message"
 msgstr "Votre nom"
 
-#: views/Home/home_view.php:80
+#: views/Contact/contact_view.php:132
+msgid "Send"
+msgstr "Envoyer"
+
+#: views/Home/home_view.php:49
 msgid "Welcome to Real Estate Resources"
 msgstr "Bienvenue aux ressources immobilières"
 
-#: views/Home/home_view.php:150
+#: views/Home/home_view.php:79
 msgid "Real Estate News"
 msgstr "Actualités immobilières"
 
-#: views/Home/home_view.php:165
+#: views/Home/home_view.php:94
 msgid ""
 "Most recent Real Estate News business news stories and video from BNN "
 "Bloomberg. "
@@ -86,7 +90,12 @@ msgstr ""
 "Les actualités commerciales les plus récentes de Real Estate News et la "
 "vidéo de BNN Bloomberg. "
 
-#: views/Home/home_view.php:183
+#: views/Home/home_view.php:96 views/Home/home_view.php:114
+#: views/Home/home_view.php:132
+msgid "see more..."
+msgstr "voir plus..."
+
+#: views/Home/home_view.php:112
 msgid ""
 "The latest real estate news for housing prices, mortgage rates, markets, "
 "luxury properties and more at Yahoo Finance Canada. "
@@ -95,57 +104,135 @@ msgstr ""
 "taux hypothécaires, les marchés, les propriétés de luxe et plus encore sur "
 "Yahoo Finance Canada. "
 
-#: views/Home/home_view.php:201
+#: views/Home/home_view.php:130
 msgid "The Globe and Mail Real Estate News."
 msgstr "The Globe and Mail Actualités immobilières."
 
-#: views/Login/register.php:42
-msgid "Sign up"
-msgstr "S'inscrire"
+#: views/Login/login.php:79 views/Login/login.php:106
+#: views/includes/header.php:80
+msgid "Login"
+msgstr "Connexion"
 
-#: views/Login/register.php:50
+#: views/Login/login.php:80
+msgid "Please enter your username and password!"
+msgstr ""
+"Veuillez s'il vous plaît entrer votre nom d'utilisateur et votre mot de "
+"passe!"
+
+#: views/Login/login.php:88 views/Login/register.php:51
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: views/Login/register.php:58
-msgid "First Name"
-msgstr "Prénom"
-
-#: views/Login/register.php:66
-msgid "Last Name"
-msgstr "Nom de famille"
-
-#: views/Login/register.php:74
-msgid "Email"
-msgstr "E-mail"
-
-#: views/Login/register.php:82
-msgid "Phone"
-msgstr "Téléphone"
-
-#: views/Login/register.php:91
+#: views/Login/login.php:93 views/Login/register.php:92
 msgid "Password"
 msgstr "Mot de passe"
 
-#: views/Login/register.php:99
+#: views/Login/login.php:115
+msgid "Don't have an account?"
+msgstr "Vous n'avez pas de compte ?"
+
+#: views/Login/login.php:115 views/Login/register.php:42
+#: views/includes/header.php:84
+msgid "Sign up"
+msgstr "S'inscrire"
+
+#: views/Login/register.php:59
+msgid "First Name"
+msgstr "Prénom"
+
+#: views/Login/register.php:67
+msgid "Last Name"
+msgstr "Nom de famille"
+
+#: views/Login/register.php:75
+msgid "Email"
+msgstr "E-mail"
+
+#: views/Login/register.php:83
+msgid "Phone"
+msgstr "Téléphone"
+
+#: views/Login/register.php:100
 msgid "Repeat password"
 msgstr "Répéter le mot de passe"
 
-#: views/Login/register.php:105
+#: views/Login/register.php:106
 msgid "Upload"
 msgstr "Télécharger"
 
-#: views/Login/register.php:110
+#: views/Login/register.php:111
 msgid "Choose File"
 msgstr "Choisir le fichier"
 
-#: views/Login/register.php:117
+#: views/Login/register.php:118
 msgid "I agree all statements in"
 msgstr "Je suis d'accord avec toutes les déclarations dans"
 
-#: views/Login/register.php:123
+#: views/Login/register.php:124
 msgid "Register"
 msgstr "S'inscrire"
+
+#: views/Resources/resources_view.php:80
+msgid "Welcome to our free resources!"
+msgstr "Bienvenue aux ressources immobilières!"
+
+#: views/Resources/resources_view.php:84
+msgid "Do you have what it takes to invest in Real Estate?"
+msgstr "Avez-vous ce qu'il faut pour investir dans l'immobilier ?"
+
+#: views/Resources/resources_view.php:86
+msgid "Below you will find a list of free resources that you can see."
+msgstr ""
+"Vous trouverez ci-dessous une liste de ressources gratuites que vous pouvez "
+"voir."
+
+#: views/Resources/resources_view.php:111
+msgid "Find the best deals!"
+msgstr "Trouvez les meilleures offres !"
+
+#: views/Resources/resources_view.php:120
+msgid "Mortgage Refinance Calculator"
+msgstr "Calculateur de refinancement hypothécaire"
+
+#: views/Resources/resources_view.php:141
+msgid "Mortgage Payment Calculator"
+msgstr "Calculateur de versement hypothécaire"
+
+#: views/Resources/resources_view.php:149
+msgid "Rental Property Calculator"
+msgstr "Calculateur de propriété locative"
+
+#: views/Resources/resources_view.php:164
+msgid "Capital Gain Tax Calculator"
+msgstr "Calculateur d'impôt sur les gains en capital"
+
+#: views/Resources/resources_view.php:172
+msgid "Home Equity Line of Credit"
+msgstr "Marge de crédit sur valeur domiciliaire"
+
+#: views/includes/footer.php:42
+msgid "Copyright:"
+msgstr "Droits d'auteur:"
+
+#: views/includes/header.php:53
+msgid "Home"
+msgstr "Page d’accueil"
+
+#: views/includes/header.php:54
+msgid "Resources"
+msgstr "Ressources"
+
+#: views/includes/header.php:55
+msgid "About"
+msgstr "À propos"
+
+#: views/includes/header.php:56
+msgid "Contact us"
+msgstr "Contactez-nous"
+
+#: views/includes/header.php:74
+msgid "Logout"
+msgstr "Se déconnecter"
 
 #~ msgid "Hello"
 #~ msgstr "Bonjour"
