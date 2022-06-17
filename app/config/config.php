@@ -25,7 +25,7 @@
 
         </email>
         */
-        $locale = isset($_GET['lang']) ? $_GET['lang'] : 'fr_CA';
+        $locale = isset($_GET['lang']) ? $_GET['lang'] : 'en';
         $domain = 'mywebapp_'.$locale;
         putenv("LANGUAGE=$locale");
         setlocale(LC_ALL, $locale);

@@ -38,7 +38,7 @@
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
           <div class="text-white">
-            <h1 class="mb-3">We offer free resources for the real estate investor</h1>
+            <h1 class="mb-3"><?php echo _("We offer free resources for the real estate investor"); ?></h1>
             
           </div>
         </div>
@@ -66,15 +66,13 @@
           </div>
 
           <div class="col-md-6 gx-5 mb-4">
-            <h4><strong>Register for free to access our resources</strong></h4>
+            <h4><strong><?php echo _("Register for free to access our resources"); ?></strong></h4>
             <p class="text-muted">
-              We are a non profit organization helping real estate investors with countless resources to help them thrive in the real estate market. From good property deals to calculators that will help the investor manage his portfolio and take important decisions.
+            <?php echo _("We are a non profit organization helping real estate investors with countless resources to help them thrive in the real estate market. From good property deals to calculators that will help the investor manage his portfolio and take important decisions. "); ?>
             </p>
-            <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+            <p><strong><?php echo _("Invest and watch your money grow"); ?></strong></p>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-              nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
-              alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+            <?php echo _("Invest the right way with the right knowledge and find the best deals the market can offer."); ?>
             </p>
           </div>
         </div>

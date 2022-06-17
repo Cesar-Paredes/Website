@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-06-16 15:29-0400\n"
-"PO-Revision-Date: 2022-06-16 15:33-0400\n"
+"POT-Creation-Date: 2022-06-16 20:05-0400\n"
+"PO-Revision-Date: 2022-06-16 20:06-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -14,8 +14,42 @@ msgstr ""
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: views/About/about_view.php:41
+msgid "We offer free resources for the real estate investor"
+msgstr "Nous offrons des ressources gratuites pour l'investisseur immobilier"
+
+#: views/About/about_view.php:69
+msgid "Register for free to access our resources"
+msgstr "Inscrivez-vous gratuitement pour accéder à nos ressources"
+
+#: views/About/about_view.php:71
+msgid ""
+"We are a non profit organization helping real estate investors with "
+"countless resources to help them thrive in the real estate market. From good "
+"property deals to calculators that will help the investor manage his "
+"portfolio and take important decisions. "
+msgstr ""
+"Nous sommes une organisation à but non lucratif qui aide les investisseurs "
+"immobiliers avec d'innombrables ressources pour les aider à prospérer sur le "
+"marché immobilier. Des bonnes affaires immobilières aux calculatrices qui "
+"aideront l'investisseur à gérer son portefeuille et à prendre des décisions "
+"importantes. "
+
+#: views/About/about_view.php:73
+msgid "Invest and watch your money grow"
+msgstr "Investissez et regardez votre argent fructifier"
+
+#: views/About/about_view.php:75
+msgid ""
+"Invest the right way with the right knowledge and find the best deals the "
+"market can offer."
+msgstr ""
+"Investissez de la bonne manière avec les bonnes connaissances et trouvez les "
+"meilleures offres que le marché peut offrir."
+
 #: views/Contact/contact_view.php:71
-msgid "Do you have any questions? Please do not hesitate to contact us directly. "
+msgid ""
+"Do you have any questions? Please do not hesitate to contact us directly. "
 msgstr "Avez-vous des questions? N'hésitez pas à nous contacter directement "
 
 #: views/Contact/contact_view.php:86
@@ -36,9 +70,34 @@ msgstr "Sujet"
 msgid "Your Message"
 msgstr "Votre nom"
 
+#: views/Home/home_view.php:80
+msgid "Welcome to Real Estate Resources"
+msgstr "Bienvenue aux ressources immobilières"
+
 #: views/Home/home_view.php:150
 msgid "Real Estate News"
 msgstr "Actualités immobilières"
+
+#: views/Home/home_view.php:165
+msgid ""
+"Most recent Real Estate News business news stories and video from BNN "
+"Bloomberg. "
+msgstr ""
+"Les actualités commerciales les plus récentes de Real Estate News et la "
+"vidéo de BNN Bloomberg. "
+
+#: views/Home/home_view.php:183
+msgid ""
+"The latest real estate news for housing prices, mortgage rates, markets, "
+"luxury properties and more at Yahoo Finance Canada. "
+msgstr ""
+"Les dernières nouvelles sur l'immobilier pour les prix des logements, les "
+"taux hypothécaires, les marchés, les propriétés de luxe et plus encore sur "
+"Yahoo Finance Canada. "
+
+#: views/Home/home_view.php:201
+msgid "The Globe and Mail Real Estate News."
+msgstr "The Globe and Mail Actualités immobilières."
 
 #: views/Login/register.php:42
 msgid "Sign up"

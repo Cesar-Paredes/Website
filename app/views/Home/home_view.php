@@ -77,7 +77,7 @@
           <!-- <div style="background-color: rgba(0, 0, 0, 0.6);"> -->
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white text-center">
-                <h1 class="mb-3">Welcome to Real Estate Resources</h1>
+                <h1 class="mb-3"><?php echo _("Welcome to Real Estate Resources"); ?></h1>
                 <!-- <h5 class="mb-4">Best & free guide of responsive web design</h5> -->
                 <!-- <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
                   role="button" rel="nofollow" target="_blank">Start tutorial</a>
@@ -162,7 +162,7 @@
               <div class="card-body">
                 <!-- <h5 class="card-title">Card title</h5> -->
                 <p class="card-text">
-                Most recent Real Estate News business news stories and video from BNN Bloomberg.
+                <?php echo _("Most recent Real Estate News business news stories and video from BNN Bloomberg. "); ?>
                 </p>
                 <a href="https://www.bnnbloomberg.ca/real-estate" target="_blank" class="btn btn-primary">Button</a>
               </div>
@@ -180,7 +180,7 @@
               <div class="card-body">
                 <!-- <h5 class="card-title">Card title</h5> -->
                 <p class="card-text">
-                The latest real estate news for housing prices, mortgage rates, markets, luxury properties and more at Yahoo Finance Canada
+                <?php echo _("The latest real estate news for housing prices, mortgage rates, markets, luxury properties and more at Yahoo Finance Canada. "); ?>
                 </p>
                 <a href="https://ca.yahoo.com/topics/canada-real-estate-news/" target="_blank" class="btn btn-primary">Button</a>
               </div>
@@ -198,7 +198,7 @@
               <div class="card-body">
                 <!-- <h5 class="card-title">Card title</h5> -->
                 <p class="card-text">
-                  The Globe and Mail Real Estate News
+                <?php echo _("The Globe and Mail Real Estate News."); ?>
                 </p>
                 <a href="https://www.theglobeandmail.com/real-estate/" target="_blank" class="btn btn-primary">Button</a>
               </div>

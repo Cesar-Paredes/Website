@@ -104,8 +104,14 @@
 
 	<select name="languages" id="languages" onchange="switchlanguage(this)">
   
+  <option value="en"
+  <?php if(!empty($_GET['lang'])){
+    echo $_GET['lang'] == 'en' ? 'selected="selected"' : ''; 
+  }
+  ?>
+  >en</option>
 
-	  <option value="en" <?php echo $_GET['lang'] == 'en' ? 'selected="selected"' : ''; ?> >en</option>
+	
 	  <option value="fr_CA" <?php echo $_GET['lang'] == 'fr_CA' ? 'selected="selected"' : ''; ?> >fr_CA</option>
     
 	</select>
