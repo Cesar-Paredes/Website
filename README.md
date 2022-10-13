@@ -1,13 +1,13 @@
 # Website
-Welcome to my Real Estate Website :)
+Welcome to my Real Estate Website :)<br/>
 
-Front-end: Responsive HTML, CSS, Bootstrap.
-Back-end: MVC design with PHP and MySQL as database
+Front-end: Responsive HTML, CSS, Bootstrap.<br/>
+Back-end: MVC design with PHP and MySQL as database<br/>
 
-Deployed locally using XAMPP v3.2.4 with Apache server and PHPMyAdmin MySQL database.
+Deployed locally using XAMPP v3.2.4 with Apache server and PHPMyAdmin MySQL database.<br/>
 
 
-
+<br/>
 I would like you to see some screenshots of the website so you have an idea of how it looks like!
 
 ![image](https://user-images.githubusercontent.com/35407350/195646587-8ea1dc83-ee34-4558-9120-c9e70956142f.png)
