@@ -15,7 +15,7 @@ I would like you to see some screenshots of the website so you have an idea of h
 
 
 ---------------------------------------------------------
-here is the Login, this user and password will be compare to the credentials stored in the database:
+here is the Login, this user and password will be compared to the credentials stored in the database:
 
 ![image](https://user-images.githubusercontent.com/35407350/195646899-e63e5e61-8bc9-4d35-8b54-818aeb031661.png)
 
