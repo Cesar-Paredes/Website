@@ -1,7 +1,7 @@
 # Website
 Welcome to my Real Estate Website :)
 
-Front-end: HTML, CSS, Bootstrap.
+Front-end: Responsive HTML, CSS, Bootstrap.
 Back-end: MVC design with PHP and MySQL as database
 
 Deployed locally using XAMPP v3.2.4 with Apache server and PHPMyAdmin MySQL database.
